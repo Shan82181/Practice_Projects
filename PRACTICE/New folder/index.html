@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="play-button" onclick="startGame()">PLAY</button>
+    <div id="box" style="display: none;">
+        <div class="navbar">
+            <h2>COMPUTER</h2>
+            <h2>PLAYER</h2>
+        </div>
+        <div class="scorebar">
+            <h2>0</h2>
+            <h2>0</h2>
+        </div>
+        <div class="resultScreen">
+            <h1>WINNER</h1>
+        </div>
+        <div class="hands">
+            <img id="computer-hand" class="hand" src="/images/Rock L.png" alt="Computer Hand">
+            <img id="user-hand" class="hand" src="/images/Scissor R.png" alt="User Hand">
+        </div>
+        <footer>
+            <button class="image-button rock" onclick="run('rock')"><img src="/images/RockLogo.png" alt="Button Image"></button>
+            <button class="image-button paper" onclick="run('paper')"><img src="/images/PaperLogo.png" alt="Button Image"></button>
+            <button class="image-button scissors" onclick="run('scissors')"><img src="/images/ScissorLogo.png" alt="Button Image"></button>
+        </footer>
+        <audio id="shakeSound" src="/sounds/shakingSound.mp3"></audio>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
